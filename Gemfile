@@ -7,9 +7,11 @@ gem "dm-migrations"
 gem "dm-sqlite-adapter"
 gem 'dm-postgres-adapter'
 gem 'dm-validations'
-gem 'rack'
+gem 'rack', '1.3.6'
 gem 'rack-flash'
 gem 'rake'
+gem 'coffee-script'
+gem 'rack-coffee'
 
 group :test do
   gem "webrat"
@@ -18,4 +20,4 @@ group :test do
   gem "cucumber"
 end
 
-
+gem "jasmine", :group => [:development, :test]
