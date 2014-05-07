@@ -4,4 +4,7 @@ Sinatra RB template project.
 
 
 G. Speake
+
 8/28/2011
+
+Updated May, 2014
