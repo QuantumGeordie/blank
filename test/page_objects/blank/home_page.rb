@@ -10,6 +10,10 @@ module PageObjects
       def page_name
         node.find('#js-page_name').text
       end
+
+      def random_number
+        node.find('#js-random_number').text
+      end
     end
   end
 end

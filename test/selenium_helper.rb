@@ -8,6 +8,8 @@ require 'capybara/dsl'
 require 'minitest/autorun'
 require 'rack/test'
 require 'active_support/dependencies'
+require 'mocha/mini_test'
+require 'mocha/setup'
 
 require File.expand_path '../../app.rb', __FILE__
 require File.expand_path '../page_objects', __FILE__

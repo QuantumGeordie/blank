@@ -18,6 +18,7 @@ group :test do
   gem 'capybara', '2.2.1'
   gem 'ae_page_objects', '1.0.0'
   gem 'activesupport'
+  gem 'mocha'
 end
 
 group :development do

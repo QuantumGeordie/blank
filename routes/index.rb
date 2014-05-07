@@ -1,5 +1,4 @@
 get '/' do
-  @random_number = rand(1000).to_s
+  @random_number = RandomNumberGenerator::generate_random_number(1000)
   erb :index
 end
-

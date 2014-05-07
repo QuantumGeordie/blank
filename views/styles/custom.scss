@@ -1,0 +1,16 @@
+p {
+  color: $grey;
+}
+
+body {
+  background-color: $white;
+  color: $darkgrey;
+  font-family: helvetica,arial-new,verdana;
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+
+.container_12 { border-top: 5px solid $fuchsia; }
+
+a         { background-color: $off-white; color: $grey; text-decoration:none;}
+a:hover   { background-color: $grey; color: $off-white; }
