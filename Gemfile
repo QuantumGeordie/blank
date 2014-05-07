@@ -12,10 +12,8 @@ gem 'rake'
 gem 'sass'
 
 group :test do
-  # gem "webrat"
-  # gem "rspec"
   gem "rack-test"
-  gem "cucumber"
+  gem 'minitest'
 end
 
 group :development do
@@ -23,7 +21,5 @@ group :development do
 end
 
 group :development, :test do
-  # gem 'better_errors'
-  gem "jasmine"
   gem 'awesome_print'
 end

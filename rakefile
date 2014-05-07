@@ -1,23 +1,18 @@
 require 'rubygems'
 require 'bundler'
+require 'rake/testtask'
+
 Bundler.setup(:default, :test)
 
-desc "Run those specs"
-task :spec do
-  require 'rspec/core/rake_task' # RSpec 2.0
-  
-  ENV['RACK_ENV'] = 'test'
-  
-  RSpec::Core::RakeTask.new 
-end
-
-task :default => :spec
-
-begin
-  require 'jasmine'
-  load 'jasmine/tasks/jasmine.rake'
-rescue LoadError
-  task :jasmine do
-    abort "Jasmine is not available. In order to run jasmine, you must: (sudo) gem install jasmine"
+namespace :test do
+  Rake::TestTask.new(:unit) do |t|
+    t.pattern = "test/unit/**/*_test.rb"
   end
+
+  Rake::TestTask.new(:integration) do |t|
+    t.pattern = 'test/integration/**/*_test.rb'
+  end
+
 end
+
+task :default => 'test:unit'
