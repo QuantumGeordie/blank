@@ -13,6 +13,10 @@ namespace :test do
     t.pattern = 'test/integration/**/*_test.rb'
   end
 
+  Rake::TestTask.new(:selenium) do |t|
+    t.pattern = 'test/selenium/**/*_test.rb'
+  end
+
 end
 
 task :default => 'test:unit'

@@ -12,8 +12,12 @@ gem 'rake'
 gem 'sass'
 
 group :test do
+  gem 'selenium-webdriver'
   gem "rack-test"
   gem 'minitest'
+  gem 'capybara', '2.2.1'
+  gem 'ae_page_objects', '1.0.0'
+  gem 'activesupport'
 end
 
 group :development do
