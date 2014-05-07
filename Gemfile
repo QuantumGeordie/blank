@@ -1,23 +1,29 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem "sinatra", "1.2.6"
+gem "sinatra", "1.4.5"
 gem "dm-core"
 gem "datamapper"
 gem "dm-migrations"
 gem "dm-sqlite-adapter"
-gem 'dm-postgres-adapter'
 gem 'dm-validations'
-gem 'rack', '1.3.6'
-gem 'rack-flash'
+gem 'rack'
+gem 'sinatra-flash'
 gem 'rake'
-gem 'coffee-script'
-gem 'rack-coffee'
+gem 'sass'
 
 group :test do
-  gem "webrat"
-  gem "rspec", "2.6.0"
+  # gem "webrat"
+  # gem "rspec"
   gem "rack-test"
   gem "cucumber"
 end
 
-gem "jasmine", :group => [:development, :test]
+group :development do
+  gem 'shotgun'
+end
+
+group :development, :test do
+  # gem 'better_errors'
+  gem "jasmine"
+  gem 'awesome_print'
+end

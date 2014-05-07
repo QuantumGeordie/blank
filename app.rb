@@ -2,13 +2,10 @@ require 'bundler'
 Bundler.setup(:default)
 
 require 'sinatra'
-require 'rack-flash'
+require 'sinatra/flash'
 
 enable :sessions
-use Rack::Flash
-
-#Dir[File.dirname(__FILE__) + '/models/*.rb'].each {|file| require file }
-#Dir[File.dirname(__FILE__) + '/routes/*.rb'].each {|file| require file }
+set :session_secret, 'rockthecasbah'
 
 require File.dirname(__FILE__) + '/routes/init.rb'
 require File.dirname(__FILE__) + '/models/init.rb'

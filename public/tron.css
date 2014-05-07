@@ -1,4 +1,8 @@
-body {background-color: #ffffff; font-family: helvetica,arial-new,verdana; }
+body {
+  background-color: #ffffff;
+  font-family: helvetica,arial-new,verdana;
+  font-size: 1.2rem;
+}
 
 .container_12 { border-top: 5px solid purple; }
 
