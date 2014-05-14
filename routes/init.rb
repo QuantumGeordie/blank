@@ -3,3 +3,4 @@ get '/styles.css' do
 end
 
 require File.dirname(__FILE__) + '/index.rb'
+require File.dirname(__FILE__) + '/dummy.rb'
