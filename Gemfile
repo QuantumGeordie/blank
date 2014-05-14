@@ -11,6 +11,10 @@ gem 'sinatra-flash'
 gem 'rake'
 gem 'sass'
 
+gem 'bitters'
+gem 'bourbon'
+gem 'neat'
+
 group :test do
   gem 'selenium-webdriver'
   gem "rack-test"

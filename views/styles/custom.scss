@@ -1,5 +1,7 @@
 p {
   color: $grey;
+  font-family: $helvetica;
+
 }
 
 body {
@@ -12,5 +14,59 @@ body {
 
 .container_12 { border-top: 5px solid $fuchsia; }
 
-a         { background-color: $off-white; color: $grey; text-decoration:none;}
-a:hover   { background-color: $grey; color: $off-white; }
+a         { color: $maroon; text-decoration:none;}
+a:hover   { color: $darkgrey; }
+
+section {
+  @include outer-container;
+  text-align: center;
+}
+
+.content {
+  max-width: 52em;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
+
+.test_descriptions { font-size: golden-ratio(10px,  1); }
+
+#first  { @include span-columns(4); padding-left: 1.2em; }
+#second { @include span-columns(4); @include omega(); padding-left: 1.2em; }
+#third  { @include span-columns(4); @include omega(); padding-left: 1.2em; }
+#fourth { @include span-columns(12); padding-left: 1.2em; padding-top: 1.2em; }
+/*
+#js-page_name {
+  font-family: monospace;
+  font-size: golden-ratio(20px,  1);
+  @include span-columns(4);
+}
+
+#random_number {
+  font-family: monospace;
+  font-size: golden-ratio(20px,  1);
+  @include span-columns(6);
+  @include omega();
+}
+*/
+.index_data {
+  margin-top: 12px;
+  color: $grey;
+  padding: 1em;
+  font-size: golden-ratio(20px,  1);
+  @include span-columns(6);
+  @include omega();
+}
+
+.history {
+  margin-top: 20px;
+}
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid $grey;
+  color: $grey;
+  background-color: $off-white;
+  border-radius: 3px; }
