@@ -2,31 +2,31 @@
 <head>
   <title>Blank Sinatra App</title>
   <link href='/normalize.css' rel='stylesheet' type='text/css' />
-
-  <link href='/960.css' rel='stylesheet' type='text/css' />
-
+  <!-- <link href='/960.css' rel='stylesheet' type='text/css' /> -->
   <link rel="stylesheet" media="all" href="/styles.css" />
 </head>
 <body>
-<div class="container_12">
+<section>
 
-  <div class="grid_9 prefix_1">
+  <section class='content'>
     <h2 id='js-application_name'><a href="/">Blank Template Sinatra Application</a></h2>
-  </div>
-  <div class="clear"></div>
+  </section>
 
-  <div class="grid_10 prefix_1 flash_notice">
-    <%= flash[:notice] %>
-  </div>
-  <div class="clear"></div>
+  <section class='content'>
+    <div class="flash_notice">
+      <%= flash[:notice] %>
+    </div>
+    <div class="flash_error">
+      <%= flash[:error] %>
+    </div>
+    <div class="flash_success">
+      <%= flash[:success] %>
+    </div>
+  </section>
 
-  <div class="grid_10 prefix_1 flash_error">
-    <%= flash[:error] %>
-  </div>
-  <div class="clear"></div>
+</section>
 
-  <%= yield %>
-  <div class="clear"></div>
-</div>
+<%= yield %>
+
 </body>
 </html>

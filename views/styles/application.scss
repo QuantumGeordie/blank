@@ -1,2 +1,12 @@
 @import 'colors';
+
+/***********************************************************************
+ Bourbon, Bitters and Neat: from Thoughtbot (http://bourbon.io/)
+  * each is a gem.
+  * after gem is installed (bundle install), run the 'install' command in /styles folder.
+ **********************************************************************/
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "bitters/bitters";
+
 @import 'custom';
