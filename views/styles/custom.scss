@@ -35,20 +35,7 @@ section {
 #second { @include span-columns(4); @include omega(); padding-left: 1.2em; }
 #third  { @include span-columns(4); @include omega(); padding-left: 1.2em; }
 #fourth { @include span-columns(12); padding-left: 1.2em; padding-top: 1.2em; }
-/*
-#js-page_name {
-  font-family: monospace;
-  font-size: golden-ratio(20px,  1);
-  @include span-columns(4);
-}
 
-#random_number {
-  font-family: monospace;
-  font-size: golden-ratio(20px,  1);
-  @include span-columns(6);
-  @include omega();
-}
-*/
 .index_data {
   margin-top: 12px;
   color: $grey;
@@ -69,4 +56,21 @@ code, tt {
   border: 1px solid $grey;
   color: $grey;
   background-color: $off-white;
-  border-radius: 3px; }
+  border-radius: 3px;
+}
+
+.flash_notice {
+  @include flash($notice-color);
+  padding: 0;
+
+}
+
+.flash_error {
+  @include flash($error-color);
+  padding: 0;
+}
+
+.flash_success {
+  @include flash($success-color);
+    padding: 0;
+}

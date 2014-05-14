@@ -6,7 +6,7 @@
   * after gem is installed (bundle install), run the 'install' command in /styles folder.
  **********************************************************************/
 @import "bourbon/bourbon";
-@import "bitters/bitters";
-/* Bitters needs to be imported before Neat */
 @import "neat/neat";
+@import "bitters/bitters";
+
 @import 'custom';
