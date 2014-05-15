@@ -13,3 +13,8 @@ get '/flash_message/:type' do
 
   redirect to '/'
 end
+
+post '/flash' do
+  ## curl --data "msg=booty itcher" http://127.0.0.1:9393/flash
+  puts "flash message = #{params[:msg]}"
+end

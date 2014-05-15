@@ -10,9 +10,8 @@ body {
   font-family: helvetica,arial-new,verdana;
   font-size: 1.2rem;
   line-height: 150%;
+  @include background(linear-gradient($silver, $white) left repeat);
 }
-
-.container_12 { border-top: 5px solid $fuchsia; }
 
 a         { color: $maroon; text-decoration:none;}
 a:hover   { color: $darkgrey; }
@@ -23,7 +22,6 @@ section {
 }
 
 .content {
-  max-width: 52em;
   margin-right: auto;
   margin-left: auto;
   text-align: left;
