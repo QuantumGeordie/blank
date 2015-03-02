@@ -16,7 +16,7 @@ gem 'bourbon'
 gem 'neat'
 
 group :test do
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '2.43.0'
   gem "rack-test"
   gem 'minitest'
   gem 'capybara', '2.2.1'
